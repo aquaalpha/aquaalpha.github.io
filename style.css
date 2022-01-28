@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+body{
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: 'Lato', sans-serif;
+}
+body .page{
+  margin: 20px 80px;
+}
+body .page2{
+  margin: 20px 80px;
+}
+/* Barre de navigation */
+nav #modal{
+  height: 300px;
+  width: 30%;
+  background-color: white;
+  font-family: Helvetica;
+  text-align: center;
+  color: white;
+  position: absolute;
+  flex-direction: column;
+  top: -400px;
+  left: 35%;
+}
+#modal h1{
+  padding-top: 60px;
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+}
+nav .onglets{
+    display:flex;
+    flex-wrap:wrap;
+    list-style-type: none;
+    text-decoration:none;
+}
+nav .onglets .boutton{
+  color: black;
+  margin-right: 20px;
+  cursor:pointer;
+  list-style-type: none;
+  text-decoration:none;
+  border: 1px solid black;
+  padding: 5px;
+  border-bottom: 100%;
+}
+nav .onglets .boutton1{
+    color: black;
+    margin-right: 20px;
+    cursor:pointer;
+    list-style-type: none;
+    text-decoration:none;
+    border: 1px solid black;
+    padding: 5px;
+    border-bottom: 100%;
+}
+nav .onglets .boutton2{
+    color: black;
+    margin-right: 20px;
+    cursor:pointer;
+    list-style-type: none;
+    text-decoration:none;
+    border: 1px solid black;
+    border-bottom: 100%;
+    padding: 5px;
+
+}
+nav .onglets .boutton3{
+    color: black;
+    margin-right: 20px;
+    cursor:pointer;
+    list-style-type: none;
+    text-decoration:none;
+    border: 1px solid black;
+    border-bottom: 100%;
+    padding: 5px;
+}
+nav .onglets .boutton3{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+nav .onglets .boutton2{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+nav .onglets .boutton1{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+nav .onglets .boutton{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+nav .onglets .boutton3:hover,
+nav.onglets .boutton3:focus {
+    color: gray;
+       
+}
+nav .onglets .boutton1:hover,
+nav.onglets .boutton1:focus {
+    color: grey;
+    
+   
+}
+nav.onglets .boutton2:hover,
+nav.onglets .boutton2:focus {
+    color: grey;
+    
+    
+}
+nav .onglets .boutton:hover,
+nav.onglets .boutton:focus {
+    color: grey;
+    
+   
+}
+/* Fin de la barre de navigation
+
+/* Header */
+header{
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-size: 500px 500px;
+  background-position: center;
+}
+header h1{
+  text-align:center;
+  font-size: 60px;
+  padding: 150px;
+  transition: transform 2.5s;
+  color: black;
+  font-family: 'Teko', sans-serif;
+}
+header .photo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 60px;
+}
+header h2{
+    text-align:center;
+    font-size: 40px;
+    padding: 150px;
+    transition: transform 2.5s;
+    color: black;
+}
+header p{
+  text-align:center;
+  font-size: 40px;
+  padding-top: 15px;
+  transition: transform 2.5s;
+  color: black;
+  background-color: skyblue;
+  border: 1px solid black;
+  padding: 5px;
+  border-bottom: 100%;
+}
+/* Fin du header */
+
+/* Pied de page */
+footer{
+  background-color: #1a1a1a;
+  padding: 25px 100px;
+  color:#828282;
+}
+footer .colonnes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .colonne{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  margin-left: 1550px;
+  text-align: center;
+  list-style-type: none;
+  text-decoration:none;
+}
+footer .colonne a{
+  color: white;
+  margin-right: 10px;
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 20px;
+  list-style-type: none;
+  text-decoration:none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+footer .colonne a:hover,
+footer .colonne a:focus {
+  color: rgb(77, 74, 74);
+  
+  
+}
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px){
+  body .page{
+    margin: 10px;
+  }
+  nav .onglets{
+    display:none;
+  }
+  header{
+    margin-top: 20px;
+    background-size: 250px 250px;
+  }
+  header h1{
+    font-size: 30px;
+    padding: 100px;
+  }
+}
